@@ -1,0 +1,84 @@
+* {font-family: Helvetica, Arial, sans-serif;}
+
+body {
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,22,68,1) 35%, rgba(48,28,55,1) 100%);
+  }
+  
+  body {
+    padding: 60px;
+  }
+  
+  input {
+    background-color: rgb(47, 47, 47);
+    border-radius: 5px;
+    border: 1.5px solid rgb(97, 32, 158);
+    color: rgb(231, 231, 231);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: aliceblue;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    align-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgb(27, 27, 27) 35%, rgba(48,28,55,1) 100%);
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    height: 0%;  
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+    color: aliceblue;
+    
+  }
+  
+  .card p {
+    width: 100%;
+    
+    flex: 1;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    margin-bottom: 0px;
+   
+    
+  }
+  
+  .card img {
+    width: 100%;
+    
+  }
+
+  
