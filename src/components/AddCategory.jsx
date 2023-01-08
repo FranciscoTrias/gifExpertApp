@@ -7,13 +7,10 @@ export const AddCategory = ({onNewCategory}) => {
    const [ inputValue, setInputValue ] = useState('')
 
     const onInputChange = ({target}) => {
-        // console.log(target.value)
+        
         setInputValue(target.value)
-        
-        
-        
-    }
 
+    }
 
     const onSubmit = (event) => {
         
@@ -22,8 +19,6 @@ export const AddCategory = ({onNewCategory}) => {
         onNewCategory(inputValue.trim());
         setInputValue('')
     }
-
-  
   
     return (
     <form onSubmit={onSubmit} >
