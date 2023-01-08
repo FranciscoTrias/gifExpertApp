@@ -1,25 +1,26 @@
 import React, { useState, useEffect} from 'react'
-import { getGifs } from './helpers/getGifs';
 import '../../src/styles.css'
 import { GifItem } from './GifItem';
+import { useFetchGifs } from '../hooks/useFetchGifs';
+import { getGifs } from './helpers/getGifs';
 
 
 export const GifGrid = ({category}) => {
-        
-  const [images, setImages] = useState()
+     
+const {images, isLoading} = useFetchGifs(category);
 
-  const getImages = async() => {
-    const newImages = await getGifs (category);
-    setImages(newImages)
-  }
+console.log({images, isLoading})
 
-    useEffect( () => {
-        getImages()
-        
-    }, [])
 
+
+if (isLoading) {
+  return (
+    
+    
+      <p style={{color:'white', textAlign: 'center', background: 'black', opacity: '80%'}}>Loading...</p>
+)
   
-    return (
+ }else { return (
     <>
         <h3>{category}</h3>
     
@@ -34,9 +35,12 @@ export const GifGrid = ({category}) => {
               ))
              
              }
+
+             
         </div>
     
     
     </>
   )
+}
 }
